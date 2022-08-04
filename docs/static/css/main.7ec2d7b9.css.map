@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.7ec2d7b9.css","mappings":"AAAA,KACE,wBACF,CAEA,IACE,aAAa,CACb,WACF","sources":["index.css"],"sourcesContent":["body {\n  background-color: #26262c;\n}\n\nimg {\n  display:block;\n  margin:auto;\n}"],"names":[],"sourceRoot":""}
