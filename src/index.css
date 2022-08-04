@@ -1,8 +1,13 @@
 body {
-  background-color: #26262c;
+  background-color: #323239;
+  font-family: 'Courier New', monospace;
 }
 
 img {
   display:block;
   margin:auto;
+}
+
+p{
+  color: #C58FC0;
 }
