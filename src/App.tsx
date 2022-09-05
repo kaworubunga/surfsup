@@ -1,11 +1,12 @@
 import website from './assets/website.png'
 import { Footer } from './containers/footer'
+import { Desktop } from './containers/desktop'
 
 function App() {
   return (
-    <div>
-      <img src={website} alt='Welcum to my website :)' />
-      <Footer></Footer>
+    <div style={{ height: '100vh' }}>
+      <Desktop />
+      <Footer />
     </div>
   )
 }

@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 body {
-  background-color: #323239;
+  background-color: #18181b;
   font-family: 'Courier New', monospace;
 }
 
-img {
-  display:block;
-  margin:auto;
+p {
+  color: #C58FC0;
+  text-align: center;
 }
 
-p{
-  color: #C58FC0;
+img {
+  max-width:100%;
+  max-height:100%;
 }
