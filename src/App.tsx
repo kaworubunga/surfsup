@@ -1,4 +1,3 @@
-import website from './assets/website.png'
 import { Footer } from './containers/footer'
 import { Desktop } from './containers/desktop'
 
