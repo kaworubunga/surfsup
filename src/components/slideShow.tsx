@@ -5,17 +5,13 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-import website from '../assets/website.png'
-import heartofmeow from '../assets/heartofmeow.jpg'
-import osin from '../assets/osin.jpg'
-import snap from '../assets/snap.jpg'
-import tzou from '../assets/tzou.jpg'
-import ok from '../assets/ok.jpg'
+import website from '../assets/images/website.png'
+import images from '../assets/images/images'
 
 const SlideShowWrapper = styled.div`
   display: flex;
   position: fixed;
-  top: 10rem;
+  top: 15vh;
 `
 
 const SlideWrapper = styled.div`
@@ -23,43 +19,32 @@ const SlideWrapper = styled.div`
   height: 39rem;
 `
 
+const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-content: center;
+`
+
 const Image = styled.img`
   margin: 1rem auto;
   border: solid 2px #18181b;
   outline: solid 2px #c58fc0;
+  max-height: 36rem;
+  max-width: 48rem;
 `
 
-const images = [
+const slideShowImages = [
   {
     url: website,
     caption: 'First iteration of this website'
   },
-  ...[
-    {
-      url: osin,
-      captions: ''
-    },
-    {
-      url: snap,
-      captions: ''
-    },
-    {
-      url: heartofmeow,
-      captions: ''
-    },
-    {
-      url: tzou,
-      captions: ''
-    },
-    {
-      url: ok,
-      captions: ''
-    }
-  ].sort(() => Math.random() - 0.5)
+  ...images
+    .map((img) => ({ url: img, caption: '' }))
+    .sort(() => Math.random() - 0.5)
 ]
 
 const fadeProperties = {
-  arrows: false,
+  arrows: true,
   fade: true,
   infinite: true,
   speed: 2000,
@@ -75,15 +60,11 @@ export function SlideShow() {
     <SlideShowWrapper>
       <SlideWrapper>
         <Slider {...fadeProperties}>
-          {images.map((img, idx) => {
+          {slideShowImages.map((img, idx) => {
             return (
-              <div key={idx}>
-                <Image
-                  style={{ maxHeight: '36rem', maxWidth: '48rem' }}
-                  src={img.url}
-                  alt={'uh oh'}
-                />
-              </div>
+              <ImageWrapper key={idx}>
+                <Image src={img.url} alt={'uh oh'} />
+              </ImageWrapper>
             )
           })}
         </Slider>
