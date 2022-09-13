@@ -34,10 +34,6 @@ const Image = styled.img`
 `
 
 const slideShowImages = [
-  {
-    url: website,
-    caption: 'First iteration of this website'
-  },
   ...images
     .map((img) => ({ url: img, caption: '' }))
     .sort(() => Math.random() - 0.5)
