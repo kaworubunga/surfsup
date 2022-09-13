@@ -5,7 +5,6 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-import website from '../assets/images/website.png'
 import images from '../assets/images/images'
 
 const SlideShowWrapper = styled.div`
