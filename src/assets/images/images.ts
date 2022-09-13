@@ -19,9 +19,8 @@ import r from './18.jpg'
 import s from './19.jpg'
 import t from './20.jpg'
 import u from './21.jpg'
-import v from './22.png'
+import v from './22.jpg'
 import w from './23.jpg'
-import x from './24.jpg'
 
 const images = [
   a,
@@ -46,8 +45,7 @@ const images = [
   t,
   u,
   v,
-  w,
-  x
+  w
 ]
 
 export default images
