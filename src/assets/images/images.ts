@@ -1,9 +1,6 @@
-import a from './1.jpg'
-import b from './2.jpg'
 import c from './3.jpg'
 import d from './4.jpg'
 import e from './5.jpg'
-import f from './6.jpg'
 import g from './7.jpg'
 import h from './8.jpg'
 import i from './9.jpg'
@@ -19,33 +16,8 @@ import r from './18.jpg'
 import s from './19.jpg'
 import t from './20.jpg'
 import u from './21.jpg'
-import v from './22.jpg'
 import w from './23.jpg'
 
-const images = [
-  a,
-  b,
-  c,
-  d,
-  e,
-  f,
-  g,
-  h,
-  i,
-  j,
-  k,
-  l,
-  m,
-  n,
-  o,
-  p,
-  q,
-  r,
-  s,
-  t,
-  u,
-  v,
-  w
-]
+const images = [c, d, e, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, w]
 
 export default images
