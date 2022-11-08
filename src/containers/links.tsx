@@ -32,30 +32,30 @@ export function IconRenderer({ icon }: IconRendererProps) {
 }
 
 export function Links({ setToolTip }: LinksProps) {
-  function setToolTipCurry(text: string) {
+  function setToolTipCallback(text: string) {
     return () => setToolTip(text)
   }
 
   return (
     <LinksWrapper>
       <IconWrapper
-        onClick={openLink('https://twitter.com/kaworubunga_')}
-        onMouseEnter={setToolTipCurry('@kaworubunga_')}
-        onMouseLeave={setToolTipCurry('')}
+        onClick={openLink('https://twitter.com/surfsuwu')}
+        onMouseEnter={setToolTipCallback('@surfsuwu')}
+        onMouseLeave={setToolTipCallback('')}
       >
         <IconRenderer icon={'twitter'} />
       </IconWrapper>
       <IconWrapper
         onClick={openLink('https://discord.com/users/184908216205836288')}
-        onMouseEnter={setToolTipCurry('SurfsUp#0001')}
-        onMouseLeave={setToolTipCurry('')}
+        onMouseEnter={setToolTipCallback('SurfsUp#0001')}
+        onMouseLeave={setToolTipCallback('')}
       >
         <IconRenderer icon={'discord'} />
       </IconWrapper>
       <IconWrapper
         onClick={openLink('https://www.twitch.tv/surfsup__')}
-        onMouseEnter={setToolTipCurry('twitch.tv/SurfsUp__')}
-        onMouseLeave={setToolTipCurry('')}
+        onMouseEnter={setToolTipCallback('twitch.tv/SurfsUp__')}
+        onMouseLeave={setToolTipCallback('')}
       >
         <IconRenderer icon={'twitch'} />
       </IconWrapper>
@@ -63,15 +63,15 @@ export function Links({ setToolTip }: LinksProps) {
         onClick={openLink(
           'https://www.youtube.com/channel/UCcsfy5KH_7OXNa7lf-YACdQ'
         )}
-        onMouseEnter={setToolTipCurry('Surfs Up')}
-        onMouseLeave={setToolTipCurry('')}
+        onMouseEnter={setToolTipCallback('Surfs Up')}
+        onMouseLeave={setToolTipCallback('')}
       >
         <IconRenderer icon={'youtube'} />
       </IconWrapper>
       <IconWrapper
         onClick={openLink('https://github.com/kaworubunga')}
-        onMouseEnter={setToolTipCurry('kaworubunga')}
-        onMouseLeave={setToolTipCurry('')}
+        onMouseEnter={setToolTipCallback('kaworubunga')}
+        onMouseLeave={setToolTipCallback('')}
       >
         <IconRenderer icon={'github'} />
       </IconWrapper>
@@ -79,8 +79,8 @@ export function Links({ setToolTip }: LinksProps) {
         onClick={openLink(
           'https://vrchat.com/home/user/usr_717cf154-ce0b-442c-93c6-120d00ec9c27'
         )}
-        onMouseEnter={setToolTipCurry('Surfs Up')}
-        onMouseLeave={setToolTipCurry('')}
+        onMouseEnter={setToolTipCallback('Surfs Up')}
+        onMouseLeave={setToolTipCallback('')}
       >
         <span className={`fa-layers fa-fw fa-${SIZE}`}>
           <FontAwesomeIcon
@@ -106,8 +106,8 @@ export function Links({ setToolTip }: LinksProps) {
       <Icon
         src={crungo}
         onClick={openLink('https://crungo.com/')}
-        onMouseEnter={setToolTipCurry('crungo.com')}
-        onMouseLeave={setToolTipCurry('')}
+        onMouseEnter={setToolTipCallback('crungo.com')}
+        onMouseLeave={setToolTipCallback('')}
       ></Icon>
     </LinksWrapper>
   )
