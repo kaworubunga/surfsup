@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Icon, IconWrapper, openLink } from '../components/icon'
 import crungo from '../assets/crungo.webp'
+import mlp from '../assets/mlp.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconName } from '@fortawesome/fontawesome-common-types'
 
@@ -107,6 +108,12 @@ export function Links({ setToolTip }: LinksProps) {
         src={crungo}
         onClick={openLink('https://crungo.com/')}
         onMouseEnter={setToolTipCallback('crungo.com')}
+        onMouseLeave={setToolTipCallback('')}
+      ></Icon>
+      <Icon
+        src={mlp}
+        onClick={openLink('https://vrc.group/POG.9890')}
+        onMouseEnter={setToolTipCallback('Mommies Little PogChamps')}
         onMouseLeave={setToolTipCallback('')}
       ></Icon>
     </LinksWrapper>
