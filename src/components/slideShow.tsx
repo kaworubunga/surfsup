@@ -9,8 +9,9 @@ import images from '../assets/images/images'
 
 const SlideShowWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   position: fixed;
-  top: 15vh;
+  top: 10vh;
 `
 
 const SlideWrapper = styled.div`
@@ -32,18 +33,21 @@ const Image = styled.img`
   max-width: 48rem;
 `
 
-const slideShowImages = [
-  ...images
-    .map((img) => ({ url: img, caption: '' }))
-    .sort(() => Math.random() - 0.5)
-]
+const slideShowImages = [...images.sort(() => Math.random() - 0.5)].map(
+  (img, idx) => (
+    <ImageWrapper key={idx}>
+      <Image src={img.url} alt={'uh oh'} />
+      <p>{img.caption}</p>
+    </ImageWrapper>
+  )
+)
 
 const fadeProperties = {
   arrows: true,
   fade: true,
   infinite: true,
-  speed: 2000,
-  autoplaySpeed: 5000,
+  speed: 2500,
+  autoplaySpeed: 8000,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -53,16 +57,10 @@ const fadeProperties = {
 export function SlideShow() {
   return (
     <SlideShowWrapper>
+      <p> hey welcome to my website</p>
+      <p>i don't know what to put here so here's some pictures i took</p>
       <SlideWrapper>
-        <Slider {...fadeProperties}>
-          {slideShowImages.map((img, idx) => {
-            return (
-              <ImageWrapper key={idx}>
-                <Image src={img.url} alt={'uh oh'} />
-              </ImageWrapper>
-            )
-          })}
-        </Slider>
+        <Slider {...fadeProperties}>{slideShowImages}</Slider>
       </SlideWrapper>
     </SlideShowWrapper>
   )

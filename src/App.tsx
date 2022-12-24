@@ -3,7 +3,7 @@ import { Desktop } from './containers/desktop'
 
 function App() {
   return (
-    <div style={{ height: '100vh' }}>
+    <div style={{ height: '98vh' }}>
       <Desktop />
       <Footer />
     </div>

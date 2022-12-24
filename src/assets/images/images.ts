@@ -18,6 +18,26 @@ import t from './20.jpg'
 import u from './21.jpg'
 import w from './23.jpg'
 
-const images = [c, d, e, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, w]
+const images = [
+  { url: c, caption: 'Original Sin' },
+  { url: d, caption: 'Rocky Mountain Ridge' },
+  { url: e, caption: 'Rocky Mountain Ridge' },
+  { url: g, caption: 'Into the Mystic' },
+  { url: h, caption: 'On The Rocks' },
+  { url: i, caption: 'On The Rocks' },
+  { url: j, caption: 'Into The Mystic' },
+  { url: k, caption: 'Into The Mystic' },
+  { url: l, caption: 'On The Rocks' },
+  { url: m, caption: 'On The Rocks' },
+  { url: n, caption: 'On The Rocks' },
+  { url: o, caption: 'On The Rocks' },
+  { url: p, caption: 'On The Rocks' },
+  { url: q, caption: 'On The Rocks' },
+  { url: r, caption: 'Lord Of The Squirrels' },
+  { url: s, caption: 'On The Rocks' },
+  { url: t, caption: 'Lord Of The Squirrels' },
+  { url: u, caption: 'Lost Lake' },
+  { url: w, caption: 'Tzouhalem Main' }
+]
 
 export default images
