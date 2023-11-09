@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Icon, IconWrapper, openLink } from '../components/icon'
-import crungo from '../assets/crungo.webp'
-import mlp from '../assets/mlp.jpg'
+import { IconWrapper, openLink } from '../components/icon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconName } from '@fortawesome/fontawesome-common-types'
 
@@ -48,7 +46,7 @@ export function Links({ setToolTip }: LinksProps) {
       </IconWrapper>
       <IconWrapper
         onClick={openLink('https://discord.com/users/184908216205836288')}
-        onMouseEnter={setToolTipCallback('SurfsUp#0001')}
+        onMouseEnter={setToolTipCallback('surfsup')}
         onMouseLeave={setToolTipCallback('')}
       >
         <IconRenderer icon={'discord'} />
@@ -104,18 +102,6 @@ export function Links({ setToolTip }: LinksProps) {
           </span>
         </span>
       </IconWrapper>
-      <Icon
-        src={crungo}
-        onClick={openLink('https://crungo.com/')}
-        onMouseEnter={setToolTipCallback('crungo.com')}
-        onMouseLeave={setToolTipCallback('')}
-      ></Icon>
-      <Icon
-        src={mlp}
-        onClick={openLink('https://vrc.group/POG.9890')}
-        onMouseEnter={setToolTipCallback('Mommies Little PogChamps')}
-        onMouseLeave={setToolTipCallback('')}
-      ></Icon>
     </LinksWrapper>
   )
 }
