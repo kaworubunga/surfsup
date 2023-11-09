@@ -46,7 +46,7 @@ export function Links({ setToolTip }: LinksProps) {
       </IconWrapper>
       <IconWrapper
         onClick={openLink('https://discord.com/users/184908216205836288')}
-        onMouseEnter={setToolTipCallback('surfsup')}
+        onMouseEnter={setToolTipCallback('SurfsUp#0001')}
         onMouseLeave={setToolTipCallback('')}
       >
         <IconRenderer icon={'discord'} />
