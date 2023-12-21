@@ -46,9 +46,7 @@ export function Footer() {
         <p>{tooltip}</p>
       </ToolTip>
       <FooterWrapper>
-        <StartButton>{/*<p>Start</p>*/}</StartButton>
         <Links setToolTip={setTooltip}></Links>
-        <Clock></Clock>
       </FooterWrapper>
     </>
   )

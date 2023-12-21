@@ -19,5 +19,13 @@ export function Clock() {
     margin: 1rem;
   `
 
-  return <Digits>{date.toLocaleTimeString()}</Digits>
+  const dateTimeFormat = Intl.DateTimeFormat('en-US', {
+    hour:'2-digit',
+    minute:'2-digit',
+    second:'2-digit',
+    timeZoneName:'shortOffset',
+    timeZone: 'America/Los_Angeles',
+  })
+
+  return <Digits>{dateTimeFormat.format(date)}</Digits>
 }
