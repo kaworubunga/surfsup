@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Clock } from '../components/clock'
 import { Links } from './links'
 
 const FooterWrapper = styled.div`
@@ -15,17 +14,6 @@ const FooterWrapper = styled.div`
   height: 3rem;
   width: 100%;
   text-align: center;
-`
-
-const StartButton = styled.div`
-  display: flex;
-  height: inherit;
-  text-align: center;
-  vertical-align: middle;
-  width: 7rem;
-  p {
-    margin: 1rem;
-  }
 `
 
 const ToolTip = styled.div`

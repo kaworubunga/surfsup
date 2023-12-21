@@ -6,13 +6,13 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import images from '../assets/images/images'
-import {Clock} from "./clock";
+import { Clock } from './clock'
 
 const SlideShowWrapper = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 10vh;
+  top: 15vh;
 `
 
 const SlideWrapper = styled.div`
@@ -56,10 +56,9 @@ const fadeProperties = {
 }
 
 export function SlideShow() {
-
   return (
     <SlideShowWrapper>
-      <Clock/>
+      <Clock />
       <SlideWrapper>
         <Slider {...fadeProperties}>{slideShowImages}</Slider>
       </SlideWrapper>

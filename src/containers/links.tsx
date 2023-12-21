@@ -35,6 +35,13 @@ export function Links({ setToolTip }: LinksProps) {
     return () => setToolTip(text)
   }
 
+  function copyToClipboard(text: string) {
+    return () => {
+      navigator.clipboard.writeText(text)
+      setToolTip('Copied!')
+    }
+  }
+
   return (
     <LinksWrapper>
       <IconWrapper
@@ -45,8 +52,8 @@ export function Links({ setToolTip }: LinksProps) {
         <IconRenderer icon={'twitter'} />
       </IconWrapper>
       <IconWrapper
-        onClick={openLink('https://discord.com/users/184908216205836288')}
-        onMouseEnter={setToolTipCallback('SurfsUp#0001')}
+        onClick={copyToClipboard('surfsup')}
+        onMouseEnter={setToolTipCallback('surfsup')}
         onMouseLeave={setToolTipCallback('')}
       >
         <IconRenderer icon={'discord'} />
